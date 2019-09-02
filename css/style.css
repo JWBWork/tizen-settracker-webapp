@@ -1,0 +1,41 @@
+/* this file is left blank on purpose, if developer can't find classes he needs in framework, he can customize his
+app adding his own styles here
+ */
+ 
+.button {
+	display: inline-block;
+	text-align: center;
+	line-height: 1.6!important;
+	font-size: 125%;
+	background-color: #4E5340;
+	color: #95A3A4;
+	border-radius: 15px;
+	margin: 5px;
+	padding: 3px;
+	width: 80px;
+	height: 75px;
+}
+
+.power {
+	background-color: #c92222;
+	color: #95A3A4;
+}
+
+.margin-0 {
+	margin: 0!important;
+	overflow: hidden;
+}
+
+.ui-header {
+	height: 4.3rem!important;
+}
+
+.excercise-style {
+	background-color: #4E5340;
+	border-radius: 30px;
+	width: 60%;
+	margin: auto;
+}
+.excercise-selected {
+	background-color: #1D8A99;
+}

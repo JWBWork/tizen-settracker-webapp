@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>SetTracker</title>
+	<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" 
+		  href="lib/tau/wearable/theme/default/tau.circle.min.css">
+	<!-- load theme file for your application -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/all.min.css"> <!-- fontawesome -->
+</head>
+<body>
+
+	<!-- Home Page -->
+	<div class="ui-page ui-page-active" id="main">
+		<header>
+			<span>
+				<i class="fas fa-pray"></i><i class="fas fa-dumbbell"></i>
+			</span>
+			<!-- <h3>LetsLift!</h3> -->
+		</header>
+		<div class="ui-content ui-content-padding">
+			<ul class="ui-listview" id="excercises-ul">
+		  		<!-- <li>Excercises go here!</li> -->
+		  		<li>
+		  			<span id="bottomExcList">
+		  				<i class="fas fa-plus button" onclick="addExcercise()"></i>
+						<i class="fas fa-info-circle button"></i>
+		  			</span>
+		  		</li>
+		  		<li>
+		  			<i class="fas fa-power-off button power" onclick="closeApp()"></i>
+		  		</li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- SET PAGE -->
+	<div class="ui-page" id="set">
+		<header class="ui-header">
+			<h3 class="margin-0" id="e-name-set">excercise-title</h3>
+		</header>
+		<div class="ui-content ui-content-padding">
+			<p class="m-name margin-0">SET</p>
+			<p class="margin-0">~inspiration~</p>
+			<i class="fas fa-step-backward button" onclick="prevMove()"></i>
+			<i class="fas fa-dumbbell button" onclick="nextMove()"></i>
+			<i class="fas fa-step-forward button" onclick="nextMove()"></i>
+		</div>
+	</div>
+
+	<!-- TIME PAGE -->
+	<div class="ui-page" id="time">
+		<header class="ui-header">
+			<h3 class="margin-0" id="e-name-time">timer-title</h3>
+		</header>
+		<div class="ui-content">
+			<p class="m-name margin-0">TIMER PAGE</p>
+			<p class="margin-0" id="timer-countdown">00:00</p>
+			<i class="fas fa-step-backward button" onclick="prevMove()"></i>
+			<i class="fas fa-pause button" id="pause" onclick="toggleTimer()"></i>
+			<i class="fas fa-play button" id="play" onclick="toggleTimer()"></i>
+			<i class="fas fa-step-forward button" onclick="nextMove()"></i>
+		</div>
+	</div>
+	
+	<!-- Completed Page -->
+	<div class="ui-page" id="complete">
+		<header class="ui-header">
+			<h3 class="margin-0">Complete!</h3>
+		</header>
+		<div class="ui-content">
+			<p class="margin-0">Good job!</p>
+			<i class="fas fa-home button" onclick="tau.changePage('#main')"></i>
+		</div>
+	</div>
+	
+	<script src="lib/tau/wearable/js/tau.min.js"></script>
+	<script src="js/lowBatteryCheck.js"></script>
+	<script src="js/circle-helper.js"></script>
+	
+	<!-- <script src="js/workerConsole.js"></script> -->
+	
+	<script src="js/notification.js"></script>
+	<script src="js/excercises.js"></script>
+	<script src="js/app.js"></script>
+	
+	<!-- <script src="js/timer.js"></script> -->
+	<script src="js/timer/timerController.js"></script>
+</body>
+</html>
