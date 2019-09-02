@@ -12,7 +12,7 @@ function setTimerStr(min, sec){
 
 var current_alarm_id;
 function startTimer(e_i, m_i){
-	tizen.power.request("CPU", "CPU_AWAKE"); // PORQUE NO WORK!?
+	tizen.power.request("CPU", "CPU_AWAKE");
 //	tizen.power.request("SCREEN", "SCREEN_NORMAL");
 	
 	var min; var sec;
