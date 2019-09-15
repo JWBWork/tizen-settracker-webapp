@@ -21,7 +21,7 @@ These are currently hardcoded as a js object - but will be provided via a REST A
 				"index": 1,
 				"type": "time",
 				"name": "Rest 1",
-				"time": [1, 0] //[min, sec]
+				"time": [1, 0]
 			},{
 				"index": 2,
 				"name": "Set 2",
@@ -38,7 +38,7 @@ These are currently hardcoded as a js object - but will be provided via a REST A
 				"index": 1,
 				"type": "time",
 				"name": "Rest 1",
-				"time": [1, 0] //[min, sec]
+				"time": [1, 0]
 			},{
 				"index": 2,
 				"name": "Set 2",
@@ -64,6 +64,7 @@ Currently there are Set moves or Timed moves. Timed moves are currently broken d
 #### Types of Moves
 -----
 There are currently two types of moves:
+
 | Move Name | Desc. |
 | ------ | ------ |
 | Set | A collection of reps. "Lift X for Y reps." |
